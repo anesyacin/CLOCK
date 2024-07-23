@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgba(249, 5, 233, 0.566);
+    background-color: #775;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .clock{
+
     position: relative;
     display: flex;
     justify-content: center;
@@ -36,12 +37,12 @@ body{
 .clock span{
     z-index: 3;
     position: absolute;
-    color:aliceblue;
     text-align: center;
     inset: 20px;
     transform: rotate(calc(30deg * var(--i)));
      }
 .clock span b{
+   
         font-size: 2em;
         opacity: 1;
         font-weight: 600;
@@ -88,5 +89,9 @@ body{
         background-size: 100% 50%;
         background-repeat: no-repeat;
     }
- 
-    
+    h1{
+        position: absolute;
+    border-radius: 50%;
+     z-index: 10;
+     color: rgb(101, 40, 40);
+    }
