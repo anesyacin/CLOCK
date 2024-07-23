@@ -13,11 +13,8 @@ const colorChangeElement = document.getElementById('colorChangeElement');
 
 function changeBackgroundColor() {
     const letters = '0123456789ABCDEF';
-    let color='#';
-    
-    for (let i = 0; i < 3; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    colorChangeElement.style.backgroundColor = color;
+    colors=[#ffd,#ff3,#ddd,#aaa,#bbb,rgb(143, 132, 142),rgb(133, 143, 132),rgb(32, 92, 27),rgb(163, 77, 77),rgb(228, 137, 137),black,rgb(157, 137, 228),rgb(80, 43, 215),rgb(215, 43, 72),rgba(117, 147, 152, 0.607)]
+   
+    colorChangeElement.style.backgroundColor = colors[Math.floor(Math.random() * colors.length];
 }
 setInterval(changeBackgroundColor, 1000);
